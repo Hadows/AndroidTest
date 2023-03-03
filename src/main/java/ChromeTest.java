@@ -22,7 +22,7 @@ public class ChromeTest {
                 new URL("http://127.0.0.1:4444"), capabilities);
 
         int i = 0;
-        while (i < 100){
+        while (i < 50){
             driver.get("https://www.google.com/");
             i++;
         }

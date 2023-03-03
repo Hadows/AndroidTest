@@ -13,9 +13,15 @@ public class GitTest {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability(MobileCapabilityType.APP, "https://github.com/Hadows/TestGit/releases/download/0.1/sample_apk_debug.apk");
-
-        URL url = new URL("http://127.0.0.1:4444");
+        URL url = new URL("http://posteitaliane.selenium.comunity/");
         AndroidDriver driver = new AndroidDriver(url,capabilities);
+
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         // Chiudere il driver
         driver.quit();
     }
