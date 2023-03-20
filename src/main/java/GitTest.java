@@ -12,8 +12,9 @@ public class GitTest {
         // Impostare le capacità desiderate per l'emulatore o il dispositivo fisico
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
+        capabilities.setCapability("automationName", "UIAutomator2");
         capabilities.setCapability(MobileCapabilityType.APP, "https://github.com/Hadows/TestGit/releases/download/0.1/sample_apk_debug.apk");
-        URL url = new URL("http://posteitaliane.selenium.comunity/");
+        URL url = new URL("http://localhost:4444/");
         AndroidDriver driver = new AndroidDriver(url,capabilities);
 
         try {

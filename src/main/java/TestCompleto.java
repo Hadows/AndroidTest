@@ -14,10 +14,11 @@ public class TestCompleto {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("browserName", "chrome");
+        capabilities.setCapability("automationName", "UIAutomator2");
         //capabilities.setCapability("se:recordVideo", "true");
         //capabilities.setCapability("se:screenResolution", "1920x1080");
 
-        URL url = new URL("http://posteitaliane.selenium.comunity/");
+        URL url = new URL("http://localhost:4444/");
         AndroidDriver driver = new AndroidDriver(url,capabilities);
 
         int i = 0;
