@@ -15,7 +15,8 @@ public class Test {
 
         // Creare un'istanza di WebDriver per Android
         WebDriver driver = new RemoteWebDriver(
-                new URL("http://localhost:4444"), capabilities);
+                new URL("http://posteitaliane.selenium.test"), capabilities);
+
 
         int i = 0;
         while (i < 25){
