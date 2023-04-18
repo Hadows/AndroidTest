@@ -9,13 +9,11 @@ public class Test {
         // Impostare le capacità desiderate per l'emulatore o il dispositivo fisico
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browserName", "chrome");
-        capabilities.setCapability("se:recordVideo", "true");
-        capabilities.setCapability("se:screenResolution", "1920x1080");
 
 
         // Creare un'istanza di WebDriver per Android
         WebDriver driver = new RemoteWebDriver(
-                new URL("http://posteitaliane.selenium.test"), capabilities);
+                new URL("http://posteitaliane.selenium.grid"), capabilities);
 
 
         int i = 0;

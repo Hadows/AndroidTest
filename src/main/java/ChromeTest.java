@@ -8,18 +8,13 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class ChromeTest {
-
-
-    public ChromeTest(){
-
-    }
-    public void test() throws MalformedURLException {
+    public static void main(String[] args) throws MalformedURLException {
         ChromeOptions capabilities = new ChromeOptions();
         capabilities.setCapability("platformName", "Linux");
 
         // Creare un'istanza di WebDriver per Android
         WebDriver driver = new RemoteWebDriver(
-                new URL("http://127.0.0.1:4444"), capabilities);
+                new URL("http://posteitaliane.selenium.grid"), capabilities);
 
         int i = 0;
         while (i < 50){
