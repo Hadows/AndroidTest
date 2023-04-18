@@ -256,12 +256,12 @@ public static void main(String[] args) throws IOException, URISyntaxException, I
     startRecording("http://posteitaliane.selenium.grid", driver.getSessionId().toString());
 
     //sleep just for generating a couple of second video
-    Thread.sleep(5000);
+    Thread.sleep(3000);
        
     System.out.println(driver.getTitle());
 
     // Stop recording and copying locally the video results.
-    stopRecording();    
+    stopRecording();
 
     // quit the driver
     driver.quit();
